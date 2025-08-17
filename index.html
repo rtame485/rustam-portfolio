@@ -1,0 +1,164 @@
+<!DOCTYPE html><html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portofolio – Rustam Efendi</title>
+  <style>
+    :root{
+      --bg:#0f172a;           /* slate-900 */
+      --card:#111827;         /* gray-900 */
+      --muted:#94a3b8;        /* slate-400 */
+      --text:#e5e7eb;         /* gray-200 */
+      --brand:#38bdf8;        /* sky-400 */
+      --brand-2:#f59e0b;      /* amber-500 */
+      --chip:#1f2937;         /* gray-800 */
+      --divider:#1f2937;
+      --success:#10b981;
+      --danger:#ef4444;
+      --shadow:0 10px 30px rgba(0,0,0,.35);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0; font:16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, "Helvetica Neue", Arial, sans-serif; background:linear-gradient(180deg,var(--bg),#0b1220 40%, #0b1220 60%, var(--bg)); color:var(--text);
+    }
+    .container{max-width:980px; margin:40px auto; padding:24px;}
+    .card{background:radial-gradient(1200px 500px at -10% -20%, rgba(56,189,248,.12), transparent 40%), radial-gradient(1000px 600px at 120% 20%, rgba(245,158,11,.12), transparent 42%), var(--card); border:1px solid #1f2534; border-radius:20px; box-shadow:var(--shadow); overflow:hidden}/* Header */
+.header{display:grid; grid-template-columns:120px 1fr auto; gap:20px; align-items:center; padding:28px; border-bottom:1px solid var(--divider);}
+.avatar{width:120px;height:120px;border-radius:16px;object-fit:cover;border:2px solid #22304a;background:#0a0f1d}
+.title h1{margin:0; font-size:32px; letter-spacing:.5px}
+.title p{margin:6px 0 0; color:var(--muted)}
+.actions{display:flex; gap:10px}
+.btn{background:linear-gradient(135deg,var(--brand),#60a5fa); color:#031022; font-weight:700; border:none; padding:10px 14px; border-radius:12px; cursor:pointer}
+.btn.secondary{background:linear-gradient(135deg,#fbbf24,var(--brand-2)); color:#1a1203}
+
+/* Body */
+.body{padding:24px; display:grid; grid-template-columns: 320px 1fr; gap:24px}
+.panel{background:rgba(2,6,23,.5); border:1px solid #1b2334; border-radius:16px; padding:18px}
+.panel h2{margin:0 0 12px; font-size:18px; letter-spacing:.4px}
+.muted{color:var(--muted)}
+.chip{display:inline-block; background:var(--chip); padding:6px 10px; border-radius:999px; margin:6px 6px 0 0; font-size:13px; border:1px solid #243049}
+
+.item{margin:12px 0 0}
+.split{display:grid; grid-template-columns: 1fr auto; gap:10px; align-items:center}
+.tag{font-size:12px; padding:2px 8px; border-radius:999px; background:rgba(56,189,248,.15); border:1px solid rgba(56,189,248,.35); color:#a5e3ff}
+
+.exp{margin:10px 0 0}
+.exp h3{margin:0; font-size:16px}
+.exp .meta{font-size:13px; color:var(--muted)}
+.exp ul{margin:10px 0 0 18px}
+
+.gallery{display:grid; grid-template-columns: repeat(3, 1fr); gap:10px; margin-top:10px}
+.gallery figure{margin:0}
+.ph{width:100%; aspect-ratio:4/3; object-fit:cover; border-radius:12px; border:1px solid #22304a; background:#0a0f1d}
+
+footer{padding:18px 28px 28px; border-top:1px solid var(--divider); display:flex; justify-content:space-between; align-items:center; color:var(--muted)}
+
+/* Print styles (A4) */
+@media print{
+  body{background:white; color:#111}
+  .container{margin:0; max-width:none; padding:0}
+  .card{border:none; box-shadow:none; border-radius:0}
+  .actions{display:none}
+  .panel{background:white; border:1px solid #e5e7eb}
+  .chip{background:#eef2ff; border-color:#c7d2fe}
+  .header{border-bottom:1px solid #e5e7eb}
+  footer{border-top:1px solid #e5e7eb}
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <header class="header">
+        <img class="avatar" src="RUSTAM.jpeg" alt="Foto Rustam" />
+        <div class="title">
+          <h1>Rustam Efendi</h1>
+          <p>FnB Supervisor / Manager / Quality Control</p>
+          <p class="muted">Indonesia · Email: rustam.efendi@gmail.com · Telp: +62-856-0943-1723 · LinkedIn: linkedin.com/in/rustamefendi</p>
+        </div>
+        <div class="actions">
+          <button class="btn" onclick="window.print()">Cetak / Simpan PDF</button>
+          <a class="btn secondary" href="#portfolio" style="text-decoration:none; display:inline-block">Lihat Portofolio</a>
+        </div>
+      </header><section class="body">
+    <!-- Sidebar -->
+    <aside class="panel">
+      <h2>Profil Singkat</h2>
+      <p class="muted">
+        Profesional FnB dengan 3+ tahun pengalaman sebagai <strong>Assistant Manager di McDonald's</strong>.
+        Terampil mengelola operasional restoran, menjaga kualitas layanan & kebersihan, serta memastikan
+        <em>food safety</em> dan <em>food quality</em> sesuai standar. Berorientasi pada efisiensi, kepatuhan SOP, dan kepuasan pelanggan.
+      </p>
+      <div class="item">
+        <h2>Keahlian Utama</h2>
+        <span class="chip">Leadership & People Management</span>
+        <span class="chip">Training & Development</span>
+        <span class="chip">Ordering</span>
+        <span class="chip">Scheduling</span>
+        <span class="chip">Administrasi Operasional</span>
+        <span class="chip">Food Safety & Quality Control</span>
+        <span class="chip">Komunikasi Aktif</span>
+      </div>
+      <div class="item">
+        <h2>Ringkasan Nilai</h2>
+        <div class="split"><span>Efisiensi jadwal & pengendalian biaya</span><span class="tag">Operasional</span></div>
+        <div class="split"><span>Kepatuhan standar kualitas & keamanan pangan</span><span class="tag">Quality</span></div>
+        <div class="split"><span>Pengembangan tim berbasis pelatihan</span><span class="tag">People</span></div>
+      </div>
+    </aside>
+
+    <!-- Main -->
+    <main class="panel">
+      <h2>Pengalaman Kerja</h2>
+      <article class="exp">
+        <div class="split">
+          <h3>Assistant Manager — McDonald's Indonesia</h3>
+          <span class="muted">2021 – 2025</span>
+        </div>
+        <div class="meta">Lokasi: Indonesia · Unit Restoran</div>
+        <ul>
+          <li>Menyusun <strong>schedule karyawan</strong> untuk memastikan kelancaran operasional dan produktivitas.</li>
+          <li>Melakukan <strong>ordering produk food & paper</strong> berdasarkan proyeksi kebutuhan dan tren penjualan.</li>
+          <li>Menjaga <strong>quality service</strong>, kebersihan (<em>cleanliness</em>), serta kepatuhan <strong>food safety & food quality</strong>.</li>
+          <li>Melaksanakan <strong>stock opname</strong> bulanan dan rekonsiliasi persediaan.</li>
+          <li>Menyusun <strong>proyeksi / forecast sales</strong> bulanan untuk perencanaan operasional.</li>
+          <li>Melatih dan mengembangkan tim (coaching, OJT) untuk menaikkan kinerja & kepatuhan SOP.</li>
+        </ul>
+      </article>
+
+      <h2 id="portfolio" style="margin-top:18px">Dokumentasi & Portofolio</h2>
+      <p class="muted">Contoh aktivitas kerja: pengarahan tim, audit kualitas, serta rapat operasional.</p>
+      <div class="gallery">
+        <figure><img class="ph" src="training.jpg" alt="Briefing tim" /></figure>
+        <figure><img class="ph" src="founder.jpg" alt="Quality check" /></figure>
+        <figure><img class="ph" src="meeting.jpg" alt="Rapat operasional" /></figure>
+        <figure><img class="ph" src="a.jpg" alt="Briefing tim" /></figure>
+        <figure><img class="ph" src="bf.jpg" alt="Briefing tim" /></figure>
+        <figure><img class="ph" src="inventory.jpg" alt="Briefing tim" /></figure>
+        <figure><img class="ph" src="safety.jpg" alt="Briefing tim" /></figure>
+        <figure><img class="ph" src="training1.jpg" alt="Briefing tim" /></figure>
+        <figure><img class="ph" src="review.jpg" alt="Briefing tim" /></figure>
+
+
+
+
+      </div>
+    </main>
+  </section>
+
+  <footer>
+    <span>Terakhir diperbarui: <script>document.write(new Date().toLocaleDateString('id-ID'))</script></span>
+  </footer>
+</div>
+
+  </div>  <!-- Petunjuk singkat ganti gambar -->  <script>
+    /*
+     Ganti placeholder gambar dengan file Anda sendiri:
+     - YOUR-PHOTO.jpg -> foto profil
+     - FOTO-PELATIHAN.jpg, FOTO-QC.jpg, FOTO-MEETING.jpg -> foto kegiatan kerja
+     Simpan file di folder yang sama dengan HTML ini.
+    */
+  </script></body>
+</html>
